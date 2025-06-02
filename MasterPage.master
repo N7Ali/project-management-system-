@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> سامانه پروژه</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.flot.js"></script>
+    <script type="text/javascript" src="doc.js"></script>
+</head>
+<body>
+    <div class="body_style">
+        <div class="menu">
+
+        </div>
+        <div class="nav" style="width: 245px">
+            <ul>
+                <li>
+                    <div class="fix">
+                        <span class="ico">
+                            <img src="image/manager.png"></span> <a href="LoginManagerPage.aspx" style="color: White">
+                                <span class="value">ورود پنل مدیر </span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="fix">
+                        <span class="ico">
+                            <img src="image/expert.png"></span> <a href="LoginostadPage.aspx" style="color: White"><span class="value">ورود پنل استاد</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="fix">
+                        <span class="ico">
+                            <img src="image/user.png"></span><a href="LoginUserPage.aspx" style="color: White"> <span class="value">ورود پنل دانشجو</span></a>
+                    </div>
+
+            </ul>
+        </div>
+        <div class="content">
+            <ul data-collapse="collapse" class="quick">
+            </ul>
+            <div class="demo-container" style="width: 800px">
+                <asp:ContentPlaceHolder ID="content1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <a href="" style="hidden"></a>
+</body>
+</html>
